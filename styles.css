@@ -7,7 +7,25 @@ body {
 }
 
 .centered-div {
-	width: 350px;
-   	height: 350px;
+	width: auto;
+   	height: auto;
+    border: solid;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    margin: 15px;
+    border: solid;
+}
+
+.prompt-container {
+    text-align: center;
+    margin: 15px;
     border: solid;
 }
