@@ -23,6 +23,10 @@ body {
     height: 350px;
     margin: 15px;
     border: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .prompt-container {
