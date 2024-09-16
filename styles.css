@@ -12,7 +12,6 @@ body {
 .centered-div {
 	width: auto;
    	height: auto;
-    border: solid;
 }
 
 .box-container {
@@ -24,7 +23,6 @@ body {
     width: 350px;
     height: 350px;
     margin: 15px;
-    border: solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
