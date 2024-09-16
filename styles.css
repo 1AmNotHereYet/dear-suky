@@ -33,10 +33,11 @@ body {
     font-family: "Roboto Slab", serif;
 }
 
-.prompt-container {
+.prompt {
+    font-size: 10px;
+    font-family: "Roboto Slab", serif;
     text-align: center;
-    margin: 15px;
-    border: solid;
+    margin-top: 65px;
 }
 
 .rotate {
