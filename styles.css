@@ -25,14 +25,12 @@ body {
     position: absolute;
     width: 350px;
     height: 350px;
-    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 20px;
     font-family: "Roboto Slab", serif;
-    border: solid;
 }
 
 #stack-1 {
