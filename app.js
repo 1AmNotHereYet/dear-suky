@@ -40,6 +40,8 @@ function displayAdjectives() {
 }
 
 document.body.addEventListener('click', function() {
+    
+    document.body.style.pointerEvents = 'none';
 
     const stack1 = document.getElementById('stack-1');
     const stack2 = document.getElementById('stack-2');
