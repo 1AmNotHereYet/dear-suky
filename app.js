@@ -41,6 +41,23 @@ function displayAdjectives(callback) {
     updateAdjective();
 }
 
+function createHearts() {
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+        heart.innerText = '❤️';
+        document.body.appendChild(heart);
+        
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+
+    setInterval(createHeart, 300);
+}
+
 document.body.addEventListener('click', function() {
     
     document.body.style.pointerEvents = 'none';
@@ -64,6 +81,7 @@ document.body.addEventListener('click', function() {
 
                 setTimeout(function() {
                     stack3.style.opacity = 1;
+                    createHearts();
                 }, 500);
             }, 500);
         });
