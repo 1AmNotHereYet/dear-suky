@@ -23,7 +23,7 @@ const adjectives = [
     'Sincere.'
 ];
 
-function displayAdjectives() {
+function displayAdjectives(callback) {
     const adjectiveTag = document.getElementById('adjective');
     let index = 0;
 
@@ -33,6 +33,8 @@ function displayAdjectives() {
             index++;
 
             setTimeout(updateAdjective, 1000);
+        } else {
+            if (callback) callback();
         }
     }
 
@@ -45,6 +47,7 @@ document.body.addEventListener('click', function() {
 
     const stack1 = document.getElementById('stack-1');
     const stack2 = document.getElementById('stack-2');
+    const stack3 = document.getElementById('stack-3');
     const prompt = document.querySelector('.prompt');
 
     prompt.classList.remove('blink');
@@ -54,6 +57,15 @@ document.body.addEventListener('click', function() {
 
     setTimeout(function() {
         stack2.style.opacity = 1;
-        displayAdjectives();
+
+        displayAdjectives(function() {
+            setTimeout(function() {
+                stack2.style.opacity = 0;
+
+                setTimeout(function() {
+                    stack3.style.opacity = 1;
+                }, 500);
+            }, 500);
+        });
     }, 500);
 });
