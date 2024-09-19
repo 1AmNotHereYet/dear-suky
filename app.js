@@ -20,10 +20,12 @@ const adjectives = [
     'Soothing.',
     'Cute.',
     'Patient.',
-    'Sincere.'
+    'Sincere.',
+    'Perfect.'
 ];
 
 function displayAdjectives(callback) {
+
     const adjectiveTag = document.getElementById('adjective');
     let index = 0;
 
@@ -42,7 +44,9 @@ function displayAdjectives(callback) {
 }
 
 function createHearts() {
+
     function createHeart() {
+
         const heart = document.createElement('div');
         heart.classList.add('heart');
         heart.style.left = Math.random() * 100 + "vw";
@@ -65,18 +69,17 @@ document.body.addEventListener('click', function() {
     const stack1 = document.getElementById('stack-1');
     const stack2 = document.getElementById('stack-2');
     const stack3 = document.getElementById('stack-3');
-    const prompt = document.querySelector('.prompt');
-
-    prompt.classList.remove('blink');
 
     stack1.style.opacity = 0;
-    prompt.style.opacity = 0;
 
     setTimeout(function() {
+
         stack2.style.opacity = 1;
 
         displayAdjectives(function() {
+
             setTimeout(function() {
+
                 stack2.style.opacity = 0;
 
                 setTimeout(function() {

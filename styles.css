@@ -9,11 +9,6 @@ body {
     overflow: hidden;
 }
 
-.centered-div {
-	width: auto;
-   	height: auto;
-}
-
 .box-container {
     position: relative;
     width: 350px;
@@ -50,15 +45,6 @@ body {
     transition: opacity 0.5s ease-out;
 }
 
-.prompt {
-    font-size: 10px;
-    font-family: "Roboto Slab", serif;
-    text-align: center;
-    margin-top: 65px;
-    opacity: 1;
-    transition: opacity 0.5s ease-out;
-}
-
 .rotate {
     animation: rotate 23s linear infinite;
 }
@@ -69,19 +55,6 @@ body {
     }
     100% {
         transform: rotate(360deg);
-    }
-}
-
-.blink {
-    animation: blink 2s infinite;
-}
-
-@keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
     }
 }
 
